@@ -13,7 +13,7 @@ export default function CartCard({
   return (
     <div className="CartCard">
       <div className="CartCardInfo">
-        <img src={image} alt="" />
+        {image?(<img src={image} alt="" />) : null}
         <p>{productName}</p>
         <p>{price}</p>
         <QuantityCounter
